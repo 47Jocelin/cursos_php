@@ -1,0 +1,64 @@
+
+<?php include "include/coneccion.php";
+       include "inlcude/acciones.php";
+       ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>NavBar Bootstrap</title>
+
+
+
+
+<body>
+<div class="contanier m-0 content-justify-center p4-2">
+  <di class="row text-center">
+       <h1 class="text-success">Registro</h1>
+    </div>
+<form id="id_Registro" Action="<?php echo $_server['php_SELF'];?>" Method="POST">
+<div class="row text-center">
+<div class="col-sm-12  col-md-12  col-lg-12"></div>
+     <input type="text" name="Nombre" Class="form-control" placeholder="Nombre" required>
+  </div>
+<div class="row tet-center>
+<div class="col-sm-12  col-md-12  col-lg-12">
+     <input type="text" name="Apellidos" Class="form-control" placeholder="Apellidos" required>
+  </div>
+<div class="row tet-center>
+<div class="col-sm-12  col-md-12  col-lg-12">
+     <input type="text" name="Direccion" Class="form-control" placeholder="Direccion" required>
+  </div>
+<div class="row tet-center>
+<div class="col-sm-12  col-md-12  col-lg-12">
+     <input type="text" name="Telefono" Class="form-control" placeholder="Telefono" required>
+  </div>
+<div class="row tet-center>
+<div class="col-sm-12  col-md-12  col-lg-12">
+     <input type="text" name="FechaNaci" Class="form-control" placeholder="FechaNaci" required>
+  </div>
+<div class="row tet-center>
+<div class="col-sm-12  col-md-12  col-lg-12">
+     <input type="text" name="email" Class="form-control" placeholder="email" required>
+  </div>
+  </div>
+<div class="row tet-center>
+<div class="col-sm-12  col-md-12  col-lg-12">
+    <input type="submit" value="Registrar" name="btn" class="btn lgtm-success">
+</div>
+</div>
+</from>
+</body>
+
+ 
+
+
+
+
+
+</head>
+<body>

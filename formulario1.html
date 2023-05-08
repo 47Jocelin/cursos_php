@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>NavBar Bootstrap</title>
+
+
+<?php include "include/conexion.php";
+             "inlcude/Acciones.php";
+
+
+<body>
+<div class="contanier m-0 content-justify-center p4-2">
+  <di class="row text-center">
+       <h1 class="text-success">FORMULARIO DE CONTACTO </h1>
+    </div>
+<form id="id_Registro" Action="<?php echo $_server['php_SELF'];?>" Method="POST">
+<div class="row text-center">
+<div class="col-sm-12  col-md-12  col-lg-12">
+     <input type="text" name="Nombre" Class="form-control" placeholder="Nombre" required>
+  </div>
+<div class="row tet-center>
+<div class="col-sm-12  col-md-12  col-lg-12">
+     <input type="text" name="Apellidos" Class="form-control" placeholder="Apellidos" required>
+  </div>
+<div class="row tet-center>
+<div class="col-sm-12  col-md-12  col-lg-12">
+     <input type="text" name="Direccion" Class="form-control" placeholder="Direccion" required>
+  </div>
+<div class="row tet-center>
+<div class="col-sm-12  col-md-12  col-lg-12">
+     <input type="text" name="Telefono" Class="form-control" placeholder="Telefono" required>
+  </div>
+  <div class="col-auto">
+   <input type="checkbox" role="switch" id="aviso" onclick="activar(this);">
+   <a href="#" class="text-decoration-none text-muted" data-bs-taggle="modal" data-bs-target="#Terminos">Acepto terminos y condiciones</a>
+   <input type="submit" id="Entrar" name="Entrar">
+ </div>
+</form>
+<script>
+   //desabilitar el boton de registrar
+   Document.getElementById('Entrar').disable=true;
+   function activar(ce){
+       if(ce.checked)
+       document.getElementById('Entrar').disable=false;
+       else
+       document.getElementById('Entrar').disable=true;
+   }
+
+   // mapa
+   // Initialize and add the map
+function initMap() {
+ // The location of Uluru
+ const uluru = { lat: -99.2722115,17, lng: 19.4446282 };
+ // The map, centered at Uluru
+ const maps = new google.maps.Map(document.getElementById("maps"), {
+   zoom: 18,
+   center: uluru,
+ });
+ // The marker, positioned at Uluru
+ const marker = new google.maps.Marker({
+   position: uluru,
+   map: map,
+ });
+}
+
+window.initMap = initMap;
+ </script>
+ <style>
+   /* Set the size of the div element that contains the map */
+#map {
+ height: 400px; /* The height is 400 pixels */
+ width: 100%; /* The width is the width of the web page */
+}
+
+ </style>
+ <script>
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC9Ze1zrjSwsYoxjd3khfN184QbXeES3A=initMap&v=weekly"
+     defer  
+   </script>
+</body>
+</html>

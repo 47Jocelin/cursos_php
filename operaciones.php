@@ -21,7 +21,6 @@ if isset($_POST['btnSumar'])){
 }
 
 
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,9 +34,11 @@ if isset($_POST['btnSumar'])){
     <body>
             <form action="<?php echo $_SERVER ['PHP_SELF'];?>"  method="POST">
                 <input type="text" name=""numero1" placeholder="Digita numemro" required> +
-                <input type="text" name="numero2" placeholder="Digita tu numero" required>
+                <input type="text" name="numero2" placeholder="Digita tu numero" required> -
                 <input type="Submit" value="sumar" name="btnSumar">
 
             </form>
     </body>
 </html>
+?>
+ 15 

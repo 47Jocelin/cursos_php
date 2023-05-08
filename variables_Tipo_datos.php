@@ -1,7 +1,7 @@
 <?php
 
-$Entero = 54;
-$Flotante = 21.4;
+$Entero = 97;
+$Flotante = 05;
 $Verdadero = true;
 $Falso = false;
 $String = "Esta es una centena de caracteres";
@@ -28,7 +28,7 @@ print $Falso;
 echo var_dump($Lenguajes);
 */
 $saludo = null;
-$saludo ="Seguidos peogramando en PHP";
+$saludo ="Seguidos programando en PHP";
 echo var_dump($saludo);
 /*
  pseudo-Types

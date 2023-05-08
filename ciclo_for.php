@@ -23,3 +23,4 @@ for(iniciar el ciclo; condicion; incremnto op decremento):
     endfor;
     echo "Aqui termina el ciclo for pues se repite".$d;
     ?>
+    12 
